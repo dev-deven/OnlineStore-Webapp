@@ -1,0 +1,26 @@
+{% extends 'shop/basics.html' %}
+{% block title %} {{product.product_name}} -MyOnlineWebsite{% endblock %}
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+
+
+        <div class="col-md-4 my-5">
+          <div class="row">
+               <img src="/media/{{product.image}}" width="300px" height="auto">
+          </div>
+            <div class="row py-5">
+                <button class="btn btn-primary buynow ml-5 ">BUY NOW</button>
+                <button class="btn btn-primary buynow ml-3">ADD TO CART</button>
+            </div>
+      </div>
+        <div class="col-md-8 my-5">
+            <h4>{{product.product_name}}</h4>
+            <h5><b>Price: ₹ {{product.price}}</b></h5>
+            <p>{{product.desc}}</p>
+        </div>
+             </div>
+    </div>
+
+{% endblock %}
