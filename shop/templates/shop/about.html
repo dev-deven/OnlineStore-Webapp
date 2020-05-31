@@ -21,10 +21,7 @@ html {
   padding: 0 8px;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
+
 
 .about-section {
   padding: 50px;
@@ -42,9 +39,16 @@ html {
   clear: both;
   display: table;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
 
 .title {
   color: grey;
+  font-size: 18px;
 }
 
 .button {
@@ -57,11 +61,19 @@ html {
   text-align: center;
   cursor: pointer;
   width: 100%;
+  font-size: 18px;
 }
 
-.button:hover {
-  background-color: #555;
+.a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
 }
+
+.button:hover, a:hover {
+  opacity: 0.7;
+}
+
 
 @media screen and (max-width: 650px) {
   .column {
@@ -81,48 +93,20 @@ html {
 
 <div class="container">
     <div class="title py-5 pd-5">
-        <h2 style="text-align:center">Our Team</h2>
+        <h2 style="text-align:center">WHO I AM</h2>
+    </div>
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/lJwTWL78PgnXQQI1jGna7lsXquNP_Mb1U2ZmrAlvdg2O8oNSCDLZXSpZ90ubdX9XuasxxciONhwuxdogVqFZLHyn928iOdjaH4zvh-_mo8DYFxPxWhUaGGCEbfmE4Tp_lx4dPzVuU11CGKqeooVb1PcIE41gbVCPV28g7S7VZVshDrnYejY7bA6NQ-fxeLV0WMQuX2nlQul7fycsy1uEtHQJcTsiNWPFkFbrwUObV5eK9mgunFcG1jb_pCOyiVuIle_lPU4Rku82udgZ77jy8ySUYPyvWRvQD1lKS7Qm-k6FhbSnOnFbGrsZsKfuu7BUZNtXU25vKKxLrmjEWjNJ0LZbx-KGJhBvKbRnqXgrFm0OV2r63msFYfhTW8zT4LoiwL2hPcpA-2a-EFRdXYuUPzBFlrnYaIKXR6nzmW5HmNo0iTFRruHWI8b31GWyjVcrLfZd7A8-RNCu6zCkqRa28IEfsYadXeCIVcLrnC98yKOtD-1ZRwafKK77U_ZUzbE7pKCADW3L4tr2D5NDBlP8Iwyo0_Jwq_Xx_TtwoSRhvV6QnE2mq9U11hSp-gJs0bnTSEA7iHFy2LrFy3e7tkF5AfnyNrwQHmkMv9LtWZUN772FYn_uQfpSVfkgzzQM1AEmVhSRQhlVzGSK7YZa-HjF4ZEV8SFOgovIcslrSX9QVxLozunC0I5QkxtZwCEK=w602-h657-no?authuser=2" alt="Devendra" style="width:100%">
+      <h1>Devendra Patil</h1>
+      <p class="title">Web App Developer</p>
+      <p>PCCOE,Nigdi</p>
+      <a href="https://github.com/dev-deven"><i class="fa fa-github text-dark"></i></a>
+      <a href="mailto:devendrapatil1027@gmail.com"><i class="fa fa-envelope text-dark"></i></a>
+      <a  href="https://www.linkedin.com/in/devendra-patil-a90b991a0/"><i class="fa fa-linkedin text-dark"></i></a>
+      <a href="https://www.facebook.com/devendra.patil.37454"><i class="fa fa-facebook text-dark"></i></a>
+     
+      <p><button  href="https://dev-deven.github.io/Portfolio-2.0/">Contact</button></p>
     </div>
 
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <div class="container">
-        <h2>Jane Doe</h2>
-        <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>jane@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>mike@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="https://www.w3schools.com/w3images/team3.jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>john@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 {% endblock %}
