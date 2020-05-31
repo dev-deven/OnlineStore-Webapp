@@ -5,10 +5,11 @@ code for this web app is written in Python using the Django framework and it can
 A.  some of its client-side features are.
   1 Add to Cart
   2 Quickview
-  3 Personal Cart
-  4.Checkout Page
-  5.Track Order
-  6.Contact Page
+  3.Search Product
+  4 Personal Cart
+  5.Checkout Page
+  6.Track Order
+  7.Contact Page
 B.  Some of its admin side features are.
 Add, Edit, Delete or Modify Product
 Replay to contact
